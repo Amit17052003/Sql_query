@@ -19,5 +19,6 @@ alter table student add primary key (id);
 --add primary key with new colunm on existing table 
 alter table student add id_1 int not null primary key;
 --Table 'student' already has a primary key defined on it.
-
 select * from STUDENT;
+DROP DATABASE amit;
+

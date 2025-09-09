@@ -31,9 +31,19 @@ select tab1.id , cus.name from table_1 as tab1 right  join Customer as cus on ta
 --FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table
 --full join and full outer join both are same join 
 select tab1.id , cus.name from table_1 as tab1 full join Customer as cus on tab1.id=cus.id;
+
+select * from table_1 as tab1 full join Customer as cus on tab1.id=cus.id;
+
 -- cross join is basically multiplaction of every row from 1st table and the 2ed table 
 --cros join not requird any condition .
-select tab1.id , cus.name from table_1 as tab1 cross join Customer as cus ;
+select tab1.id , cus.name from table_1 as tab1 cross join Customer as cus;
+
+
+select tab1.* , cus.name from table_1 as tab1 
+full join Customer as cus on tab1.id=cus.id;
+
+
+
 
 
 
